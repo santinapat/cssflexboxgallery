@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header>CSS FLEXBOX GALLERY</header>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		box-sizing: border-box;
+		background: floralwhite;
+		text-align: center;
+	}
+	.container{
+		background: ghostwhite;
+		padding-bottom: 150px;
+		padding-top: 150;
+	}
+	.container:hover{
+
+	}
+	.gallery{
+		width: 100%;
+		max-width: 350px;
+		height: 650px;
+		object-fit: cover;
+		margin: 30px;
+		padding: 1px;
+		display: inline-grid;
+	}
+	.desc{
+		padding: 15px;
+		text-align: center;
+	}
+	header{
+		text-align: center;
+		height: 40px;
+		font-size: 30px;
+		margin: 10px;
+		font-family: monospace;
+		color: black;
+
+	}
+	p{
+		text-align: center;
+		color: black;
+		height: 50px;
+		font-size: 40px;
+		font-family: monospace;
+		color: #452c63;
+	}
+	button{
+		background-color: aliceblue;
+  		border: none;
+  		color:black;
+  		padding: 5px 15px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-flex;
+  		font-size: 15px;
+  		margin: 4px 2px;
+  		cursor: pointer;
+  		float: center;
+	}
+	.box{
+		box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+		transition: 1s ease;
+
+	}
+	.box img{
+		width: 300px;
+		height: 300px;
+		display: inline-grid;
+		display: flex;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+    	object-fit: cover;
+    	flex-wrap: wrap;
+    	border-radius: 5px;
+    	padding-left: 60px;
+
+	}
+	.box:hover{
+		transform: scale(1.2);
+		z-index: 2;
+	}
+	.title{
+		text-align: center;
+		font-size: 25px;
+		color: #1d1160;
+	}
+	.desc{
+		text-align: center;
+		color: #1d1160;
+	}
+	a{
+		text-align: center;
+	}
+</style>
+<body>
+<div class="container">
+	
+	<div class="gallery">
+		<div class="box"><img src="https://cdn.britannica.com/08/190808-050-CB26C47B/The-Powerpuff-Girls-Bubbles-Blossom-Buttercup.jpg"></div>
+			<div class="title">Image 1r</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://cdn.britannica.com/08/190808-050-CB26C47B/The-Powerpuff-Girls-Bubbles-Blossom-Buttercup.jpg"><button class="button">Click Me!</button></a>
+	</div>
+	
+	<div class="gallery">
+		<div class="box"><img src="https://static.wikia.nocookie.net/charactercommunity/images/a/a8/BlossomReSize.png/revision/latest?cb=20200123141354"></div>
+			<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://static.wikia.nocookie.net/charactercommunity/images/a/a8/BlossomReSize.png/revision/latest?cb=20200123141354"><button class="button">Click Me!</button></a>
+		
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://i.ebayimg.com/images/g/89IAAOSw9Zpivi86/s-l1200.webp"></div>
+			<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://i.ebayimg.com/images/g/89IAAOSw9Zpivi86/s-l1200.webp"><button class="button">Click Me!</button></a>
+	
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://facts.net/wp-content/uploads/2023/09/22-facts-about-bubbles-the-powerpuff-girls-1694408222.jpg"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://facts.net/wp-content/uploads/2023/09/22-facts-about-bubbles-the-powerpuff-girls-1694408222.jpg"><button class="button">Click Me!</button></a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="gallery">
+		<div class="box"><img src="https://plus.unsplash.com/premium_photo-1672329275106-073b5493c00f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://plus.unsplash.com/premium_photo-1672329275106-073b5493c00f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1706463629335-d92264bbfd6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1706463629335-d92264bbfd6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1706390120538-849ba265d3c7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1706390120538-849ba265d3c7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1682687220247-9f786e34d472?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1682687220247-9f786e34d472?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1584448098255-234156529929?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1584448098255-234156529929?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://plus.unsplash.com/premium_photo-1675355675360-a0cfa025f682?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://plus.unsplash.com/premium_photo-1675355675360-a0cfa025f682?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1705875999426-b2899c13a70c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1705875999426-b2899c13a70c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1706012161052-84909face304?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1706012161052-84909face304?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1706497957493-700acb56bfa7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1706497957493-700acb56bfa7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1706609493923-065a1b770f18?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1706609493923-065a1b770f18?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1706528465042-5f485884b84e?q=80&w=1899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1706528465042-5f485884b84e?q=80&w=1899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://plus.unsplash.com/premium_photo-1666232903265-ba0419aa3ef7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://plus.unsplash.com/premium_photo-1666232903265-ba0419aa3ef7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="gallery">
+		<div class="box"><img src="https://plus.unsplash.com/premium_photo-1705351823377-653fbf88179b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://plus.unsplash.com/premium_photo-1705351823377-653fbf88179b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1706126199117-1ec76a5e84af?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1706126199117-1ec76a5e84af?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://plus.unsplash.com/premium_photo-1703369351409-89feb78293ea?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://plus.unsplash.com/premium_photo-1703369351409-89feb78293ea?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+
+	<div class="gallery">
+		<div class="box"><img src="https://images.unsplash.com/photo-1706459493377-fcfe8d3c068b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+		<div class="title">Sed ut per</div>
+			<div class="desc">Lorem ipsum dolor sit amet consectelar adipisicing elit.</div>
+			<a href="https://images.unsplash.com/photo-1706459493377-fcfe8d3c068b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"><button class="button">Click Me!</button></a>
+	</div>
+</div>
+</div>
+<footer>
+		<p>CSS Flexbox Gallery</p>
+	</footer>
+</body>
+</html>
